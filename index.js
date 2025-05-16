@@ -15,7 +15,7 @@ app.get('/contact', (req, res)=>{
 // Method post :
 app.post('/form', (req, res)=>{
     const {email, password} = req.body;
-    res.send(`Welcome to your user page !`);
+    res.sendFile(path.join(__dirname, 'views/profile.html'));
 });
 
 // 404 page :
